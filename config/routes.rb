@@ -4,4 +4,7 @@ Rails.application.routes.draw do
   resources :jobs
   root 'jobs#index'
   get '/welcome/', to: 'welcome#index'
+  namespace :admin do
+    resources :jobs
+  end
 end
