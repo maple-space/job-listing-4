@@ -16,53 +16,7 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
  @import "font-awesome";
- .custab{
-   border: 1px solid #ccc;
-   padding: 5px;
-   margin: 5% 0;
-   box-shadow: 3px 3px 2px #ccc;
-   transition: 0.5s;
- }
 
- .custab:hover{
-   box-shadow: 3px 3px 0px transparent;
-   transition: 0.5s;
- }
- .jumbotron {
-   background-image:url('https://ooo.0o0.ooo/2017/01/15/587afeab3f427.jpg');
-   background-repeat: no-repeat;
-   background-size: cover;
-   padding-bottom: 110px;
- }
- .title {
-   font-family: "Helvetica Neue", "Microsoft Yahei", 微软雅黑;
-   text-align: center;
-   margin-top: 200px;
-   margin-bottom: 80px;
- }
- .slogan {
-  margin-top: 10px;
-  margin-bottom: 50px;
-  text-align: center;
-  color: white;
-  top: 12px;
-}
-.lead {
-  margin-bottom: 60px;
-  text-align: center;
-  color: white;
-}
-.caption {
-  margin: 30px;
-  text-align: center;
-  top: 20px;
-}
-
-.thumbnail {
-    border: 0 none;
-    box-shadow: none;
-    margin-top: 60px;
-}
 .navbar-default {
     background-color: #00b38a;//背景颜色
     border-color: #00b38a;//边框色
@@ -105,7 +59,7 @@
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:focus,
 .navbar-default .navbar-nav > .open > a:hover {
-    background-color: #FFE0B2;
+    background-color: #00b38a;
     color: #212121;
 }//end of 修改导航栏连接颜色
 
@@ -124,33 +78,7 @@
   border-radius: 0;//圆角为0
 }
 
-//修改文本对齐背景
-.title {
-  background-color: rgba(250, 250, 250, 0.39);//背景颜色含透明度
-  max-width: 500px;//最大宽度
-  margin-top: 200px;//和顶部拉开距离
-  margin-bottom: 0;//这样就可以紧接息面的描述文字
-  border-top-right-radius: 3px;//右上角圆边
-  border-top-left-radius: 3px;//左上角圆边
-}
 
-.jumbotron h1, .jumbotron .h1 {
-    text-align: left;//文字左对齐
-    color: #222;	//字体颜色
-    padding: 50px 20px 0;//上50px，左右20px，下0
-}
-
-.jumbotron p {
-    margin: 0;//上下左右margin为0
-    font-size: 26px;//字体大小
-    max-width: 500px;//最大宽度
-    background-color: rgba(250, 250, 250, 0.39);//背景颜色含透明度
-    padding: 20px;//上下左右padding为20px
-    text-align:left;//文字左对齐
-    color: #222;//字体颜色
-    border-bottom-right-radius: 3px;//右下角圆边
-    border-bottom-left-radius: 3px;//左下角圆边
-}// end of 修改文本对齐背景
 
 //修改按钮颜色
 .btn-danger {
@@ -173,3 +101,6 @@
     border-radius: 3px;//btn圆角
     width: 200px;//这里用指定宽度把btn拉得更长
 }
+
+@import "user_registration";
+@import "welcome"
