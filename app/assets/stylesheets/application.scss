@@ -64,8 +64,8 @@
     margin-top: 60px;
 }
 .navbar-default {
-    background-color: #212121;//背景颜色
-    border-color: #212121;//边框色
+    background-color: #81C784;//背景颜色
+    border-color: #81C784;//边框色
     margin-bottom: 0;//底部 margin 不撑开距离
 }
 @media (min-width: 768px) {
@@ -85,7 +85,7 @@
   background-color: transparent;//鼠标放置在链接上的背景颜色，这里设为透明
 }
 
-//修改导航栏连接颜色
+//修改导航栏上的链接颜色
 .navbar-default .navbar-nav > li > a{
   color: #EF6C00;
 }
