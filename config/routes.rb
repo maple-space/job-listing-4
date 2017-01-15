@@ -21,5 +21,6 @@ Rails.application.routes.draw do
 
   # get '/search1/', to: 'jobs#search'
 
-  root 'jobs#index'
+  # root 'jobs#index'
+  root 'welcome#index'
 end

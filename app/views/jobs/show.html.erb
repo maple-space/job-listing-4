@@ -1,14 +1,15 @@
 <div class="container">
 <div class="col-md-12">
     <h1> <%= @job.title %> </h1>
+    <span class="label label-info">
+      发布时间
+       <%= @job.created_at %>
+    </span>
     <p>
       <%= simple_format(@job.description) %>
     </p>
     <div>
-      <span class="label label-info">
-        发布时间
-         <%= @job.created_at %>
-      </span>
+
         <div class="pull-right">
         </div>
       </div>
@@ -16,6 +17,6 @@
 
     <hr>
     <div class="text-center">
-      <%= link_to("投交简历", new_job_resume_path(@job), :style => "font-size: 30px; text-decoration:underline;") %>
+      <%= link_to("投递简历", new_job_resume_path(@job), :style => "font-size: 20px; text-decoration:underline;") %>
     </div>
 </div>
