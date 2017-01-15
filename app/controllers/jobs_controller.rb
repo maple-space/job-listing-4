@@ -1,5 +1,7 @@
 class JobsController < ApplicationController
   before_action :authenticate_user!, only: [:new, :create, :update, :edit, :destroy]
+  # before_action :validate_search_key , :only => [:search]
+  before_filter :validate_search_key , :only => [:search]
   def show
     @job = Job.find(params[:id])
 
@@ -46,6 +48,26 @@ class JobsController < ApplicationController
     @job.destroy
     redirect_to jobs_path
   end
+  def search
+    name = params[:q]
+    @jobs = Job.published.where("title LIKE '%#{name}%'")
+    # @job1 = Job.published.where("title LIKE '%#{name}%'")
+    # @job2 = Job.published.where("description LIKE '%#{name}%'")
+    # @jobs = @job1 + @job2
+  end
+
+protected
+
+  def validate_search_key
+    @query_string = params[:q].gsub(/\\|\'|\/|\?/, "") if params[:q].present?
+    @search_criteria = search_criteria(@query_string)
+  end
+
+
+  def search_criteria(query_string)
+    { :title_or_description__cont => query_string }
+  end
+
   private
   def job_params
     params.require(:job).permit(:title, :description, :wage_upper_bound, :wage_lower_bound, :contact_email, :is_hidden)

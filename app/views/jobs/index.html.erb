@@ -1,3 +1,43 @@
+<!-- <div class="container">
+	<div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+            <div id="imaginary_container">
+                <div class="input-group stylish-input-group">
+                    <input type="text" class="form-control"  placeholder="Search" >
+                    <span class="input-group-addon">
+                        <button type="submit">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                    </span>
+                </div>
+            </div>
+        </div>
+	</div>
+</div> -->
+<br>
+<div class="container">
+<div class ="row">
+ <div class="col-sm-6 col-sm-offset-3">
+	 <div class="imaginary_container">
+	 	<div class="row">
+	     <div id="custom-search-input">
+	        <div class="input-group col-md-12">
+	          <%= form_tag search_jobs_path , :method => :get, :class => "jobs-search-form" do %>
+	            <div class="input-group">
+	              <input type="text" class="form-control" name="q" value="<%= params[:q] %>" placeholder="职位搜索">
+	              <span class="input-group-btn">
+	                <button type="submit" class="btn btn-info">
+	                  <span class="glyphicon glyphicon-search"></span>
+	                </button>
+	              </span>
+	            </div>
+	          <% end %>
+	        </div>
+	     </div>
+	   	</div>
+	 </div>
+ </div>
+ </div>
 <div class="dropdown clearfix pull-right">
     <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuDivider" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
       排序
@@ -17,6 +57,9 @@
      </li>
   </ul>
 </div>
+</div>
+</div>
+<br />
 
 <table class="table table-boldered">
     <thead>
@@ -46,5 +89,4 @@
         </tr>
         <% end %>
     </tbody>
-
 </table>
