@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   end
   root 'jobs#index'
   get '/welcome/', to: 'welcome#index'
+  get '/reg/', to: "user_register#index"
   namespace :admin do
     resources :jobs do
       member do

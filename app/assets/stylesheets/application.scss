@@ -64,8 +64,8 @@
     margin-top: 60px;
 }
 .navbar-default {
-    background-color: #81C784;//背景颜色
-    border-color: #81C784;//边框色
+    background-color: #00b38a;//背景颜色
+    border-color: #00b38a;//边框色
     margin-bottom: 0;//底部 margin 不撑开距离
 }
 @media (min-width: 768px) {
@@ -173,3 +173,5 @@
     border-radius: 3px;//btn圆角
     width: 200px;//这里用指定宽度把btn拉得更长
 }
+
+@import "user_register"
