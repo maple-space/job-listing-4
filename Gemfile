@@ -35,6 +35,7 @@ gem 'simple_form'
 gem 'font-awesome-rails'
 gem 'carrierwave'
 gem 'ransack'
+gem "will_paginate"
 
 group :development, :test do
   gem 'sqlite3'
