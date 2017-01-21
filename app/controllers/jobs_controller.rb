@@ -18,7 +18,7 @@ class JobsController < ApplicationController
             else
               Job.published.recent
             end
-    @jobs = Job.search(params[:search])        
+    @jobs = Job.published.search(params[:search])
   end
   def new
     @job = Job.new
