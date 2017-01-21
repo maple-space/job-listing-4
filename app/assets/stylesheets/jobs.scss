@@ -7,7 +7,7 @@
   text-align: left;
 }
 .searchbox{
-  float: right;
+  float: left;
   width: 421px;
   height: 38px;
   padding: 9px 7px;
@@ -26,4 +26,10 @@
     border: 1px solid #5d9b4d;
     font-size: 14px;
     font-family: simsun;
+}
+#image{
+  position: relative;
+  background-image: url("https://ww4.sinaimg.cn/large/006tKfTcly1fbr6uhj0y8j309405uaa2.jpg");
+  height: 550px;
+  background-size: cover;
 }
